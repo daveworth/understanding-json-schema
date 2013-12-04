@@ -1,0 +1,26 @@
+name texlive-scripts
+category TLCore
+revision 32286
+shortdesc TeX Live infrastructure programs
+longdesc Includes install-tl, tl-portable, rungs, etc.; not needed for
+longdesc tlmgr to run but still ours.  Not included in tlcritical.
+depend texlive.infra
+depend texlive-scripts.ARCH
+postaction shortcut type=menu name="TeX Live command-line"   cmd=TEXDIR/tlpkg/installer/tl-cmd.bat
+containersize 62508
+containermd5 4928617d3ec234f4c71d8a1ef29013f2
+doccontainersize 22184
+doccontainermd5 a47264c9a2e4e8fae55178e82222a93b
+runfiles size=66
+ install-tl
+ texmf-dist/scripts/texlive/lua/texlive/getopt.tlu
+ texmf-dist/scripts/texlive/lua/texlive/tlpdb.tlu
+ texmf-dist/scripts/texlive/lua/texlive/utils.tlu
+ texmf-dist/scripts/texlive/rungs.tlu
+ texmf-dist/scripts/texlive/test-tlpdb.tlu
+ texmf-dist/scripts/texlive/texconf.tlu
+ tlpkg/installer/ctan-mirrors.pl
+ tlpkg/installer/install-menu-perltk.pl
+ tlpkg/installer/install-menu-text.pl
+ tlpkg/installer/install-menu-wizard.pl
+ tlpkg/installer/texlive.png
